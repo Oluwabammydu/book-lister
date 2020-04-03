@@ -1,0 +1,129 @@
+body{
+    color: #444;
+    font-family: 'Segoe UI', 'Tahoma';
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+#container{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);;
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid rgb(202, 120, 240);
+}
+
+#banner{
+    background-color: #eee;
+    padding: 10px 0; 
+    text-align: center;
+}
+
+#banner h1, #banner p{
+    width: 100%;
+    margin: 10px 0;
+}
+
+#banner input{
+    width: 90%;
+    max-width: 300px;
+    padding: 10px 5px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+#book-lists, #add-book{
+    margin: 30px;
+}
+
+#book-lists ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#book-lists li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+}
+
+#book-lists li:hover{
+    border-color: #9361bf;
+}
+
+.delete{
+    float: right;
+    background-color: #9361bf;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.delete:hover{
+    background-color: #333;
+}
+
+#add-book{
+    width: 400px;
+    margin: 0px auto;
+}
+
+#add-book input{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;   
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 300px;
+    /* float: left; */
+}
+
+#add-book button{
+    background-color: #9361bf;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #9361bf;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 20px 0;
+    display: block;
+    width: 100px;
+    float: left;
+    border-left: 0;
+}
+
+#add-book:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#add-book label{
+    line-height: 52px;
+    position: relative;
+    left: 20px;
+    
+}
+
+#add-book #hide{
+    margin: 30px;
+    position: relative;
+    top: 64px;
+    left: -175px;
+}
