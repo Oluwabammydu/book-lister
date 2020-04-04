@@ -127,3 +127,14 @@ h1, h2{
     top: 64px;
     left: -175px;
 }
+
+/* MEDIA QUERIES */
+/* tablets */
+@media screen and (max-width: 768px){
+
+}
+
+/* Mobiles */
+@media screen and (max-width: 480px){
+
+}
