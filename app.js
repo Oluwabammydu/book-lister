@@ -8,8 +8,28 @@ bookList.addEventListener('click', function(e){
     }
 });
 
+
 //add book
-const addForm = document.forms['#add-book'];
-addForm.addEventListener('click', function(e){
-    
+const addForm = document.forms['add-book'];
+addForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const value = addForm.querySelector('input[type=text').value;
+
+//create elements
+const li = document.createElement('li');
+const bookName = document.createElement('span');
+const deleteButton = document.createElement('span');
+
+//add content
+bookName.textContent = value;
+deleteButton.textContent = 'delete';
+
+//add classname
+bookName.classList.add('name');
+deleteButton.classList.add('delete');
+
+//append DOM
+li.appendChild(bookName);
+li.appendChild(deleteButton);
+bookList.appendChild(li)
 })
