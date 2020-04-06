@@ -33,3 +33,15 @@ li.appendChild(bookName);
 li.appendChild(deleteButton);
 bookList.appendChild(li)
 })
+
+
+//hide books
+const hideBook = document.querySelector('#hide');
+
+hideBook.addEventListener('change', function(e){
+    if(hideBook.checked){
+        bookList.style.display = 'none';
+    } else{
+        bookList.style.display = 'block';
+    }
+})
